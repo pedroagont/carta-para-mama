@@ -15,7 +15,7 @@
       } else if (mensaje.value == "") {
             alert("Mensaje vacío");
       } else {
-      window.location.href = "letter.html?nombre="+nombre.value+"&mensaje="+mensaje.value;
+      window.location.href = "carta.html?nombre="+nombre.value+"&mensaje="+mensaje.value;
       }
 
     }
