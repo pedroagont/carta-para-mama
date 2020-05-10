@@ -144,19 +144,30 @@ h1{
 }
 
 .container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container div {
-  padding: 10px;
+.container .input {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .input label {
   color: white;
 }
 
 .container textarea {
-  padding: 10px;
+  padding: 15px;
   width: 300px;
   border: 1px solid #D8D8D8;
   border-radius: 20px;
+  font-size: 20px;
 }
 
 .container textarea:focus {
@@ -165,11 +176,12 @@ h1{
 }
 
 
-.container input {
-  padding: 10px;
+.container .input input {
+  padding: 15px;
   width: 300px;
   border: 1px solid #D8D8D8;
   border-radius: 20px;
+  font-size: 20px;
 }
 
 .container input:focus {
@@ -179,8 +191,10 @@ h1{
 
 
 .container button {
-  margin: 14px 7px 0 5px;
-  padding: 7px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
   border-radius: 20px;
   color: #444444;
   width: 100px;
@@ -206,6 +220,7 @@ h1{
 
 #contador {
   margin-top: 20px;
+  color: white;
 }
 
 #titulo {

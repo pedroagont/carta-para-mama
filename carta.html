@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta property="og:url"           content="https://pgonzalez.mx/cartaparamama"/>
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Carta Para Mamá" />
-    <meta property="og:description"   content="Una carta para ti, mamá" />
-    <meta property="og:image"         content="https://pgonzalez.mx/fondo.jpg" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="./style.css">
-    <title>Carta Para Mamá</title>
-  </head>
-  <body>
-    <div id="wrap">
-      <h1 id="titulo-carta">¡Felicidades Mamá!</h1>
-    		<input type="checkbox" id="checkbox" class="checkbox">
-    		<div id="letter_wrap">
-    			<label for="checkbox" class="handle" onclick></label>
-    			<div id="back"></div>
-    			<div id="flap">
-    				<div id="closed_flap"></div>
-    				<div id="open_flap"></div>
-    			</div>
-    			<div id="letter"></div>
-    			<div id="front"></div>
-    		</div>
+  <meta property="og:url" content="https://pgonzalez.mx/cartaparamama" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Carta Para Mamá" />
+  <meta property="og:description" content="Una carta para ti, mamá" />
+  <meta property="og:image" content="https://pgonzalez.mx/fondo.jpg" />
 
-        <div class="compartir">
-          <!-- Your share button code -->
-          <!-- <div class="fb-share-button"
+  <link rel="stylesheet" href="./style.css">
+  <title>Carta Para Mamá</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <h1 id="titulo-carta">¡Felicidades Mamá!</h1>
+    <input type="checkbox" id="checkbox" class="checkbox">
+    <div id="letter_wrap">
+      <label for="checkbox" class="handle" onclick></label>
+      <div id="back"></div>
+      <div id="flap">
+        <div id="closed_flap"></div>
+        <div id="open_flap"></div>
+      </div>
+      <div id="letter"></div>
+      <div id="front"></div>
+    </div>
+
+    <div class="compartir">
+      <!-- Your share button code -->
+      <!-- <div class="fb-share-button"
             data-layout="button_count" data-size="small">
           </div> -->
 
-          <div id="whatsapp" class="links-carta" ></div>
+      <div id="whatsapp" class="links-carta"></div>
 
-          <a href="https://pgonzalez.mx/cartaparamama"  class="links-carta">Crear nueva carta para mamá</a>
+      <a href="https://pgonzalez.mx/cartaparamama" class="links-carta">Crear nueva carta para mamá</a>
 
-        </div>
+    </div>
 
-    	</div>
+  </div>
 
-      <script type="text/javascript" src="./construir.js"></script>
+  <script type="text/javascript" src="./construir.js"></script>
 
-      <script type="text/javascript" src="./wasap.js"></script>
-      <script>
-        wasap.init({
-          elementCallback: function(el, wasap_send){
-            el.addEventListener('click', function(e){
-              e.preventDefault();
-              var prompt_phone = prompt('Ingresa el número de WhatsApp de tu mamá', el.dataset.whatsapp);
-              if(!prompt_phone) return;
-              wasap_send({ phone: prompt_phone });
-            });
-          }
-        })
-      </script>
+  <script type="text/javascript" src="./wasap.js"></script>
+  <script>
+    wasap.init({
+      elementCallback: function(el, wasap_send) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          var prompt_phone = prompt('Ingresa el número de WhatsApp de tu mamá', el.dataset.whatsapp);
+          if (!prompt_phone) return;
+          wasap_send({
+            phone: prompt_phone
+          });
+        });
+      }
+    })
+  </script>
 
-      <!-- Load Facebook SDK for JavaScript -->
-      <!-- <script>(function(d, s, id) {
+  <!-- Load Facebook SDK for JavaScript -->
+  <!-- <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
@@ -68,5 +72,6 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script> -->
 
-  </body>
+</body>
+
 </html>
