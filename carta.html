@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta property="og:url" content="https://pgonzalez.mx/cartaparamama" />
+  <meta property="og:url" content="https://neonwavemx.com/cartaparamama" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Carta Para Mamá" />
   <meta property="og:description" content="Una carta para ti, mamá" />
-  <meta property="og:image" content="https://pgonzalez.mx/fondo.jpg" />
+  <meta property="og:image" content="https://neonwavemx.com/assets/fondo.jpg" />
 
   <link rel="stylesheet" href="./assets/style.css">
   <title>Carta Para Mamá</title>
@@ -32,29 +32,14 @@
     </div>
 
     <div class="compartir">
-      <div id="whatsapp" class="links-carta"></div>
+      <a href="#" class="links-carta" id="whatsapp">Envíale esta carta a tu mamá por WhatsApp</a>
       <a href="./index.html" class="links-carta">Crear nueva carta para mamá</a>
     </div>
 
   </div>
 
-  <script type="text/javascript" src="./assets/js/construir.js"></script>
-
-  <script type="text/javascript" src="./assets/js/wasap.js"></script>
-  <script>
-    wasap.init({
-      elementCallback: function(el, wasap_send) {
-        el.addEventListener('click', function(e) {
-          e.preventDefault();
-          var prompt_phone = prompt('Ingresa el número de WhatsApp de tu mamá', el.dataset.whatsapp);
-          if (!prompt_phone) return;
-          wasap_send({
-            phone: prompt_phone
-          });
-        });
-      }
-    })
-  </script>
+  <script type="text/javascript" src="./assets/js/construirCarta.js"></script>
+  <script type="text/javascript" src="./assets/js/handleUrl.js"></script>
 
 </body>
 

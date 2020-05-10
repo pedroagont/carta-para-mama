@@ -118,13 +118,10 @@ p {
   margin: 70px auto;
 }
 
-.links-carta a {
-  font-size:16px;
-  color: white !important;
-}
-
 a.links-carta {
-  font-size:16px;
+  display: block;
+  margin: 10px;
+  font-size:18px;
   color: white !important;
 }
 

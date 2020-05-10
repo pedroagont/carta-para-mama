@@ -28,14 +28,6 @@
         return;
     }
 
-    function compartirWhatsapp(){
-      const compartir = document.getElementById("whatsapp");
-      const htmlWhatsAppSnippet = '<span data-whatsapp="5219988458554" data-whatsapp-message="'+window.location.href+'" style="color:white !important;">Enviar por Whatsapp</span>';
-      compartir.innerHTML = htmlWhatsAppSnippet;
-      return;
-    }
-
   construirCartaHtml();
-  compartirWhatsapp();
 
 })();
