@@ -12,7 +12,7 @@
   <meta property="og:description" content="Una carta para ti, mamá" />
   <meta property="og:image" content="https://pgonzalez.mx/fondo.jpg" />
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/style.css">
   <title>Carta Para Mamá</title>
 </head>
 
@@ -32,22 +32,15 @@
     </div>
 
     <div class="compartir">
-      <!-- Your share button code -->
-      <!-- <div class="fb-share-button"
-            data-layout="button_count" data-size="small">
-          </div> -->
-
       <div id="whatsapp" class="links-carta"></div>
-
-      <a href="https://pgonzalez.mx/cartaparamama" class="links-carta">Crear nueva carta para mamá</a>
-
+      <a href="./index.html" class="links-carta">Crear nueva carta para mamá</a>
     </div>
 
   </div>
 
-  <script type="text/javascript" src="./construir.js"></script>
+  <script type="text/javascript" src="./assets/js/construir.js"></script>
 
-  <script type="text/javascript" src="./wasap.js"></script>
+  <script type="text/javascript" src="./assets/js/wasap.js"></script>
   <script>
     wasap.init({
       elementCallback: function(el, wasap_send) {
@@ -62,15 +55,6 @@
       }
     })
   </script>
-
-  <!-- Load Facebook SDK for JavaScript -->
-  <!-- <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script> -->
 
 </body>
 
