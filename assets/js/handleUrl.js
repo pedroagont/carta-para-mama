@@ -22,6 +22,6 @@ fetch(URL_API_REBRANDLY, {
   .then(data => {
     const { shortUrl } = data;
     const compartir = document.getElementById("whatsapp");
-    compartir.setAttribute('href', `https://wa.me/?text=Aunque%20estemos%20lejos%2C%20una%20carta%20para%20ti%20mamá%20https://${shortUrl}`);
+    compartir.setAttribute('href', `https://wa.me/?text=Una%20carta%20para%20ti%20mamá%20https://${shortUrl}`);
   })
   .catch(err => console.log(err))
