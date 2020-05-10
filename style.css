@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat&family=Open+Sans&family=Pacifico&display=swap');
+
 body{
     outline: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     -webkit-perspective:800px;
     background-color: rgba(0, 0, 0, 0.5);
     background: url('./fondo.jpg') no-repeat;
@@ -10,33 +12,130 @@ body{
     overflow-y; hidden;
 }
 
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin: 50px 0;
+    line-height: 3rem;
+    text-align: center;
+    text-shadow: 0 1.5px 0 black;
+    color: #fff;
+    margin: 100px 80px 10px 80px;
+}
+
+p {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .input {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .input label {
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+  text-shadow: 0 1.5px 0 black;
+}
+
+.container .input textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 20px;
+
+}
+
+.container .input textarea:focus {
+  outline: none;
+  border: 1px solid #4285F4;
+}
+
+.container .input input {
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family:
+}
+
+.container .input input:focus {
+  outline: none;
+  border: 1px solid #4285F4;
+}
+
+.container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-radius: 20px;
+  color: #444444;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  outline: none;
+}
+
+.compartir {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-shadow: 0 1px 0 black;
+}
+
+#contador {
+  margin-top: 20px;
+  color: white;
+  text-shadow: 0 1px 0 black;
+}
+
+#titulo {
+  font-size:40px;
+}
+
+#titulo-carta {
+  margin: 80px auto;
+  font-size:40px;
+}
+
+.links-carta {
+  font-size:16px;
+  color: white !important;
+}
+
+/* CSS animación carta */
 @-webkit-keyframes bugfix {
   from {padding:0;}
   to {padding:0;}
 }
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-shadow: 0 1px 0 #black;
-    opacity: 0;
-}
 #wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 530px;
-/*    height: 1000px;*/
     margin: 20px auto 0;
     margin-top: 80px;
 }
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
-    margin: 50px 0;
-    text-align: center;
-    text-shadow: 0 1px 0 #fff;
-    color: #fff;
-    margin: 100px 80px 10px 80px;
-}
 #letter_wrap {
-    overlay:hidden;
     height: 446px;
     position:relative;
     top: 0px;
@@ -114,7 +213,6 @@ h1{
     background: #ffcf url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/144467/letter_bg.png');
     position: relative;
     top:200px;
-    overlay: hidden;
     height: 190px;
     width: 400px;
     margin: 0 auto;
@@ -141,99 +239,4 @@ h1{
     -moz-transition: opacity 1s ease-in-out 2s;
     -o-transition: opacity 1s ease-in-out 2s;
     transition: opacity 1s ease-in-out 2s;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .input {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .input label {
-  color: white;
-}
-
-.container textarea {
-  padding: 15px;
-  width: 300px;
-  border: 1px solid #D8D8D8;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-.container textarea:focus {
-  outline: none;
-  border: 1px solid #4285F4;
-}
-
-
-.container .input input {
-  padding: 15px;
-  width: 300px;
-  border: 1px solid #D8D8D8;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-.container input:focus {
-  outline: none;
-  border: 1px solid #4285F4;
-}
-
-
-.container button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 80px;
-  border-radius: 20px;
-  color: #444444;
-  width: 100px;
-  height: 50px;
-  font-size: 20px;
-  background-color: white;
-}
-
-.container label {
-  display: block;
-  padding: 20px;
-  font-size: 30px;
-}
-
-.compartir {
-  text-align: center;
-  padding: 20px;
-}
-
-
-@media (max-width:540px){
-}
-
-#contador {
-  margin-top: 20px;
-  color: white;
-}
-
-#titulo {
-  margin:30px 50px 10px 50px;
-  font-size:40px;
-}
-
-#titulo-carta {
-  margin:30px 50px 50px 50px;
-  font-size:40px;
-}
-
-.links-carta {
-  font-size:16px;
-  color: white !important;
 }
